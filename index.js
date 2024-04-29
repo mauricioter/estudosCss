@@ -7,4 +7,4 @@ function click(){
         console.log(Math.random(),icon.classList)
     }; 
 } 
-click()   
+click()    

@@ -16,14 +16,15 @@
 
 }
 body { 
-    background-color: #17171A; 
+    background-color: var(--color-dark); 
     color: aliceblue; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh; 
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column;   
 }  
-header { 
+header {  
+    background-color: var(--color-dark2);
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -42,22 +43,26 @@ header {
     display: flex; 
     align-items: center; 
     gap: 10px; 
-    width: 600px;
+    width: 600px; 
+    background-color: var(--color-dark4);
 } 
 .wrapperInput input { 
     background-color: transparent; 
     outline: none; 
     color: var(--color-red); 
-    border: none;   
+    border: none; 
+    flex: 1  
 }   
-.wrapperInfo{ 
+.wrapperInfo{  
     display: flex; 
     justify-content: center;
     flex-direction: column; 
     align-items: center; 
-    gap: 10px;
+    gap: 40px; 
+    margin-top: 40px;
 }
-.wrapperInfo article{  
+.wrapperInfo article{ 
+    background-color: var(--color-dark4);  
    display: flex;
    flex-direction: column; 
    justify-content: center;
@@ -66,11 +71,11 @@ header {
    width: 800px; 
    padding: 10px;
 }
-.wrapperInfo article h1{  
-    justify-content: center; 
+.wrapperInfo article h1{   
+    padding: 10px;
 } 
 .wrapperInfo article p{  
-    display: flex;  
+    gap: 20px;  
 }
 .wrapperDate {  
     padding-left: 10PX;
@@ -84,6 +89,6 @@ header {
   cursor: pointer; 
   align-items: center;
 } 
-.wrapperDate svg{ 
+.wrapperDate svg.filled{ 
     fill: #E07B67;
 } 
